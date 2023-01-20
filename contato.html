@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - StudyWithLola</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1>
+                <img class="logo" src="img\study.png" alt="Logo da página: um bloco de notas
+                azul escrito Keep Learning , e um pincel roxo e laranja.">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="conteudo.html">Conteúdo</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input class="input-padrao" type="text" id="nomesobrenome" required>
+
+            <label for="email">Email</label>
+            <input class="input-padrao" type="email" id="email" required placeholder="email@email.com">
+
+            <label for="telefone">Telefone</label>
+            <input class="input-padrao" type="tel" id="telefone" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato? </legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">
+                    Email
+                </label>
+
+                <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    Telefone
+                </label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                        checked>
+                    Whatsapp
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual o assunto?</legend>
+                <select>
+                    <option>Compartilharmento de conteúdo</option>
+                    <option>Cursos</option>
+                    <option>Outros assuntos</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox">
+                <input type="checkbox" checked>
+                Gostaria de receber nossas novidades por email ?
+            </label>
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+        <p class="p-table">Horário de funcionamento</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda à sexta</td>
+                    <td>09 às 18 hrs</td>
+                </tr>
+                <tr>
+                    <td>Feriados</td>
+                    <td>09 às 12 hrs</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img class="imgfooter" src="img\study.png" alt="Logo da página: um bloco de notas
+        azul escrito Keep Learning , e um pincel roxo e laranja.">
+        <p>&copy; Copyright: StudyWithLola 2023</p>
+    </footer>
+</body>
